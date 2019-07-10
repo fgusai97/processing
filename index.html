@@ -14,16 +14,43 @@
             
             // Example
             void setup() {
-              size(200, 200);
-              background(255);
-            }
-            void draw(){
-                pushMatrix();
-                translate(100, 100);
-                rotate(radians(frameCount * 2  % 360));
-                rect(0, 0, 80, 5);
-                popMatrix();
-            }
+
+
+
+
+             size(500, 500);
+
+
+             background(1000);
+
+           }
+
+
+           void draw(){
+               pushMatrix();
+           translate(250, 250);
+           fill(frameCount * 30 % 1000, frameCount * 5 % 200);
+           rotate(radians(frameCount * -2 % 360));
+               ellipse(20, 70, 40, 40);
+               popMatrix();
+
+           
+               pushMatrix();
+           translate(250, 250);
+           rotate(radians(frameCount * 2 % 125));
+
+
+               rect(50, 0, 80, 80);
+               popMatrix();
+               pushMatrix();
+           translate(250, 250);
+           rotate(radians(frameCount * 2 % 360));
+           
+
+
+               rect(50, 80, 80, 80);
+               popMatrix();
+           }
             
         </script>
         <canvas></canvas>
